@@ -1,0 +1,29 @@
+Mini CRM rendszer készítése - ügyfelek nyilvántartása személyes adataik alapján
+Cél: meglévő pénzügyi termékeik nyomonkövetése, hitel, lakásbiztosítás, életbiztosítás, stb.
+
+Megvalósítás: Java alkalmazás, parancssorral
+
+Működés: Az alkalmazás különböző típusú pénzügyi termékeket tart nyilván, banki és biztosítási termékekről lesz szó.
+Felvehető lesz új ügyfél, akinél meg kell jelölni, hogy milyen meglévő termékei vannak, azok néhány paraméterével együtt.
+A program tudja majd listázni az adott kijelölt hónapban, hogy mely ügyfelekkel kell felvenni a kapcsolatot egy esetleges újrakötés, 
+módosítás miatt.
+A program megjeleníti majd a legtöbb szerződéssel rendelkező ügyfelet, illetve egyéb összefüggések alapján azt is, 
+akik esetében valamilyen termék még kimaradt.(Pl.:Van hitel, nincs lakásbizti)
+
+Tervezési minták:
+
+Factory: Új ügyfél létrehozása
+Név, lakcím, adóazonosító alapján új ügyfél példány legyártása.
+
+Decorator: Több ügyfél kiválasztása esetén (GOF1)
+
+Singleton:
+
+Observer: Ügyfél adatok frissítése, szerződés megszüntetés, módosítás.
+
+Tervezési alapelvek:
+
+Egységtesztek:
+
+
+
